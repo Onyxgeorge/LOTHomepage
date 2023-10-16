@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: roboto;
+    padding: 2rem 2rem;
+}
+.navLogo{
+    display: flex;
+    justify-content: space-between;
+}
+.sidenav{
+display: none;
+height: 100%;
+width: 100%;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(8, 7, 7);
+overflow-x: hidden;
+
+}
+.sidenav a{
+padding: 12px 12px 8px 5px;
+text-decoration: none;
+font-size: 20px;
+color: #fff;
+}
+.prev{
+display: flex;
+justify-content: space-between;
+}
+.prev .closebtn{
+font-size: 25px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navjr{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.navjr li{
+    padding: 2rem;
+}

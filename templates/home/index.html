@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siloam 2024 | Layers of Truth</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="navLogo">
+            <img src="{% static 'img/LOT 3D GOLD 1.png' %}" alt="LOGO" width="60px">
+            <div class="jrnav">
+                <ul>
+                    <li><a href="#">Sign Up</li>
+                    <li><a href="#">Sign In</li>
+                    <li><a href="#">Register</li>
+                </ul>
+                <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav" class="side">
+            <div class="prev">
+                <a href="#" class="logo2"><img width="50px" src="{% static 'img/LOT 3D GOLD 1.png' %}" alt="logo"></a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+            </div>
+            <ul class="navjr">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+    </nav>
+    <header>
+        <h1>WELCOME TO SILOAM</h1>
+        <p>Siloam is a non-denominational 4-day conference hosted annually by The Layers of Truth Church, Kaduna.
+            It is usually a time of in-depth study of God’s word, line upon line and precept upon precept, bringing great revelation light that leads to restoration, renewal and revival.</p>
+            <p class="btn">REGISTER</p>
+    </header>
+</body>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.display = "block";
+        document.getElementById("mySidenav").style.transitionDuration = "ease-in 12s";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.display = "none";
+        }
+</script>
+
+</html>
